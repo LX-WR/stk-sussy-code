@@ -186,12 +186,11 @@
                 new transform event is generated before maximum time.
         delta-steering If the steering angle difference exceeds this delta,
                 new transform event is generated before maximum time. -->
-  <replay max-frames="540000" delta-t="0.100"  delta-speed="0.6"
+  <replay max-frames="12000" delta-t="0.100"  delta-speed="0.6"
           delta-steering="0.26" />
 
   <!-- Special urls -->
-  <urls stk-website="https://supertuxkart.net/Main_Page"
-		donate="https://supertuxkart.net/Donate"
+  <urls donate="https://supertuxkart.net/Donate"
         password-reset="https://online.supertuxkart.net/password-reset.php"
         assets-download="https://github.com/supertuxkart/stk-assets-mobile/releases/download/"/>
 
@@ -218,7 +217,7 @@
 
   <!-- time is the time till a bomb explodes. time-increase is the time added
        to timer when bomb is passed on. -->
-  <bomb time="30.0" time-increase="0.0"/>
+  <bomb time="10.0" time-increase="-10.0"/>
 
   <!-- Item return times.
        Time until an item that has been collected returns. Can be set
@@ -260,7 +259,7 @@
            larger than this value.
   -->
   <networking steering-reduction="1.0"
-              max-moveable-objects="30"/>
+              max-moveable-objects="15"/>
 
   <!-- Camera
        The field of views for 1-4 player split screen. fov-3 is
@@ -536,7 +535,7 @@
   which leads to crash with STK), but the fonts are to blame, what's the point of not
   using industry standard nowadays...
   -->
-  <fonts-list normal-ttf="Cantarell-Regular.otf wqy-microhei.ttf NotoSansThai-Regular.ttf NotoSansHebrew-Regular.ttf NotoNaskhArabicUI-Regular.ttf NotoSansMalayalam-Regular.ttf NotoSansGeorgian-Regular.ttf NotoSansDevanagari-Regular.ttf"
+  <fonts-list normal-ttf="Cantarell-Regular.otf wqy-microhei.ttf NotoSansThai-Regular.ttf NotoSansHebrew-Regular.ttf NotoNaskhArabicUI-Regular.ttf NotoSansMalayalam-Regular.ttf"
               digit-ttf="SigmarOne.otf"
               color-emoji-ttf="NotoColorEmoji.ttf"/>
 
